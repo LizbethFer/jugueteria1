@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+/*imagenes*/
+.gallery{
+  height: auto;
+}
+/* ACA COMIENZA MENU */
+#inicio, #contacto, #nosotros, #boton, #niños, #niñas, #bebes{
+  color: #ebf82e;
+  font-weight: bold;
+}
+#inicio:hover, #contacto:hover, #nosotros:hover, #boton:hover, #niños:hover, #niñas:hover, #bebes:hover{
+  color: red;
+  background-color: yellow;
+  border-radius: 10%;
+}
+
+.navbar{
+    margin: 30px auto;
+    border-radius: 10px;
+    text-transform: uppercase;         
+  } 
+  .dropdown-menu{
+    background-color: red;
+  }    
+  
+.logo1{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .logo {
+      width: 10%;
+      margin-left: 5px; }
+
+     }
+  
+  @media (max-width: 500px) {
+    .navbar-brand {
+      width: 197px; } }
+  
+  @media (max-width: 400px) {
+    .navbar-brand {
+      width: 150px; } }
+  
+  .nav-link {
+    color: yellow; 
+    flex: 1 1 auto;}
+  
+  @media (max-width: 990px) {
+    .titulo {
+      font-size: 30px; }
+    .logo {
+      display: none; }
+    .logo1 {
+        display: list-item;
+      width: 20%;
+      margin-left: 5px;
+      border-radius: 50%; }
+      .nav-link {
+        color: yellow; 
+        flex: 1 1 auto;}
+        #inicio, #contacto, #nosotros, #boton{
+          text-align: center;
+        }
+     }
+
+
+/* ACA TERMINA MENU */
+
+body{
+    background-image: url(imagenes/fondo1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.logo{    
+    float: left;
+    width: 7%;
+    padding: 4px;
+    margin: auto;
+    border-radius: 50%;
+}
+/* ACA COMIENZA LOS ICONOS DE REDES */
+.facebook, .instagram, .linkedin{
+    background-image: url(imagenes/redes.png);
+    width: 48px ;
+    height: 96px;
+    float: right;
+    padding: 1px;
+    margin: 0;
+    margin-left: auto;
+
+  }
+  .facebook{          
+    background-position: -48px 0px;
+}
+.instagram{
+    background-position: -144px 0px;
+}
+.linkedin{
+    background-position: -192px 0px ;
+}
+.facebook:hover{          
+    background-position: -48px -48px;
+}
+.instagram:hover{
+    background-position: -144px -48px;
+}
+.linkedin:hover{
+    background-position: -192px -48px ;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0%;
+    z-index: 1;    
+}
+
+
+/* ACA TERMINA LOS ICONOS DE REDES */
+/*footer*/
+footer a {
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s; }
+  footer {
+    background-color: rgb(248, 39, 39);
+    color: #ebf82e;
+    margin-top: 100px; 
+    clear: both;}
+  /* line 99, ../../../Desktop/boca/scss/_encabezado.scss */
+  footer a:hover {
+    color: #1cce2b;
+    text-decoration: none; }
+  
+  /* line 104, ../../../Desktop/boca/scss/_encabezado.scss */
+  .copy {
+    font-size: 12px;
+    padding: 10px;
+    border-top: 1px solid #FFFFFF; }
+  
+  /* line 110, ../../../Desktop/boca/scss/_encabezado.scss */
+  .footer-middle {
+    padding-top: 2em;
+    color: #ebf82e; }
+        /*empieza las imagenes*/
+        .contenedor{
+            margin: 5px;
+          }
+          div.gallery {
+      height: 370px;
+      margin: auto;
+      padding: auto;
+    
+    }
+    
+    div.gallery:hover {
+      cursor: pointer;
+    }
+    div.desc:hover{
+      background-color: rgba(255, 255, 0, 0.575);
+      color: black;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+      background-color: rgba(240, 22, 22, 0.623);
+      color: white;
+      font-weight: bold;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+    
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+    
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+    
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+        
+        
